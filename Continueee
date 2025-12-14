@@ -1,0 +1,2 @@
+fruits.splice(1, 0, 'Grapes');
+console.log("After splice:", fruits);
