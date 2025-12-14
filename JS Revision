@@ -1,0 +1,2 @@
+let first = fruits.shift(); 
+console.log("After shift:", fruits, "| Removed:", first);
