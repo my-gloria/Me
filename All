@@ -1,0 +1,29 @@
+let text = "Hello, World!";
+
+console.log("First character:", text.charAt(0));
+
+let part = text.slice(0, 5);
+console.log("Slice 0-5:", part); 
+
+let fruits = ['Apple', 'Banana', 'Cherry'];
+
+fruits.push('Orange');
+console.log("After push:", fruits); 
+
+let last = fruits.pop();
+console.log("After pop:", fruits, "| Removed:", last);
+
+let first = fruits.shift();
+console.log("After shift:", fruits, "| Removed:", first); 
+
+fruits.unshift('Mango');
+console.log("After unshift:", fruits);
+
+
+fruits.splice(1, 0, 'Grapes'); 
+console.log("After splice:", fruits); 
+
+console.log("Using forEach:");
+fruits.forEach(function(fruit, index) {
+  console.log(index + ":", fruit);
+});
