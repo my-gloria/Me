@@ -1,0 +1,4 @@
+console.log("Using forEach:");
+fruits.forEach(function(fruit, index) {
+  console.log(index + ":", fruit);
+});
