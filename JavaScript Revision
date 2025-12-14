@@ -1,0 +1,10 @@
+let fruits = ['Apple', 'Banana', 'Cherry'];
+fruits.push('Orange');   
+fruits.shift();          
+fruits.unshift('Mango'); 
+fruits.splice(1, 0, 'Grapes'); 
+let part = fruits.slice(1, 4); 
+
+fruits.forEach((item, i) => {
+  console.log(i, item);
+});
