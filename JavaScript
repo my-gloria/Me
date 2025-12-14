@@ -1,0 +1,2 @@
+let removed = fruits.pop();
+console.log("After pop:", fruits, "| Removed:", removed);
