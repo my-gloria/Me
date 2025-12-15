@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Combined Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .box {
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="title">Hello</h1>
+  <h1 class="title">Welcome</h1>
+
+  <button id="submitButton">Click Me</button>
+
+  <div class="box">Box 1</div>
+  <div class="box">Box 2</div>
+
+  <script>
+  
+    let firstTitle = document.querySelector(".title");
+    console.log("First title text:", firstTitle.textContent);
+
+    let allTitles = document.querySelectorAll(".title");
+    allTitles.forEach((title, index) => {
+      console.log(`Title ${index}:`, title.textContent);
+    });
+
+    var button = document.getElementById('submitButton');
+    button.addEventListener('click', function() {
+      alert('Button clicked!');
+    });
+
+    let boxes = document.getElementsByClassName("box");
+    for (let i = 0; i < boxes.length; i++) {
+      boxes[i].style.color = "blue"; // change text color
+    }
+
+    let fruits = ['Apple', 'Banana', 'Cherry'];
+
+    fruits.push('Orange');      
+    fruits.pop();                
+    fruits.shift();              
+    fruits.unshift('Mango');     
+    fruits.splice(1, 0, 'Grapes');
+
+    fruits.forEach((fruit, index) => {
+      console.log(`Fruit ${index}:`, fruit);
+    });
+
+    let text = "Hello, World!";
+    console.log("Character at 0:", text.charAt(0));
+    console.log("Slice 0-5:", text.slice(0,5));
+  </script>
+
+</body>
+</html>
