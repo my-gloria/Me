@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Best schools in Rwanda by order</h1>
+        <p class="best">RCA</p>
+        <p>Green Hills Academy</p>
+        <p>Ntare L S</p>
+        <p>Maranyundo GS</p>
+        <button onclick="styleMe()">Style 1st school</button>
+        <button onclick="addNewSchool()">Add new school</button>
+    </div>
+    <script>
+        function styleMe(){
+            const rca = document.getElementsByClassName("best")[0]
+            console.log(rca.innerHTML)
+            rca.style.color = "green"
+        }
+        function addNewSchool(){
+            const newSchoolP = document.createElement("p")
+            const newSchoolContent = document.createTextNode("Akazuba GS")
+            newSchoolP.append(newSchoolContent)
+            const parentDiv = document.getElementsByTagName("div")[0]
+           // parentDiv.append(newSchoolP)
+           const greenHills = parentDiv.firstElementChild.nextElementSibling.nextElementSibling
+           parentDiv.insertBefore(newSchoolP,greenHills)
+        }
+    </script>
+</body>
+</html>
