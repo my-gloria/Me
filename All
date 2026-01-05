@@ -35,3 +35,17 @@ fruits.forEach(function(fruit, index) {
 .background-image {
     background-image:url("https://www.w3schools.com/w3images/mountains.jpg");
 }
+
+# These are the background
+
+.yellow-color-box {
+    background:yellow;
+}
+
+.cyan-color-box {
+    background:cyan;
+}
+
+.magenta-color-box {
+    background:magenta;
+}
