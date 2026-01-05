@@ -49,3 +49,17 @@ fruits.forEach(function(fruit, index) {
 .magenta-color-box {
     background:magenta;
 }
+
+# color & font
+
+h1 {
+    font:46px;
+}
+
+h2 {
+    color:blue;
+}
+
+p {
+    font:20px;
+}
