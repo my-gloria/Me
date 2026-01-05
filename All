@@ -36,6 +36,8 @@ fruits.forEach(function(fruit, index) {
     background-image:url("https://www.w3schools.com/w3images/mountains.jpg");
 }
 
+#The easiest challenge
+print("Hello, World!")
 # These are the background
 
 .yellow-color-box {
