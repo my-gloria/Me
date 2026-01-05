@@ -1,3 +1,5 @@
+#This is the first revision
+
 let text = "Hello, World!";
 
 console.log("First character:", text.charAt(0));
@@ -27,3 +29,9 @@ console.log("Using forEach:");
 fruits.forEach(function(fruit, index) {
   console.log(index + ":", fruit);
 });
+
+#This is the doings on the bonus of w3schools
+
+.background-image {
+    background-image:url("https://www.w3schools.com/w3images/mountains.jpg");
+}
