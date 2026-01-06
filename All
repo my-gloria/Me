@@ -75,3 +75,17 @@ print("Five is greater than two!")}
 
 #Printing the funniest vibes
 print("Cheers, Mate!")
+
+#Here we was correcting the exam and every one has his/her codes. So these are mine.
+
+import numpy as np
+
+
+
+def degreestoFar(TC):
+    TF = 9/5*TC+32
+    return TF
+    TC= float(input("enter degrees"))
+    TF = degreestoFar(TC)
+    
+    print(TF)
