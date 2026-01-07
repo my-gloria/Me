@@ -89,3 +89,48 @@ def degreestoFar(TC):
     TF = degreestoFar(TC)
     
     print(TF)
+
+#These are the codes of C work; Where we were asked to Write a C program to read at run time five items/items of the one dimensional array. 
+    #-Make them integers. 
+    #-Find the smallest & biggest items.
+    #-Find the sum of all elements. 
+    #-Find the product of all elements.
+
+#include <stdio.h>
+int main(){
+
+int myArray[5];
+int i;
+int smallest;
+int biggest;
+int sum=0;
+int product=1;
+
+printf ("Enter five integers");
+printf ("\n\n");
+for (i=0;i<5;i++){
+printf ("Enter integer %d:",i+1);
+scanf ("%d",&myArray[i]);
+
+}
+smallest=myArray[0];
+biggest=myArray[0];
+
+for (i=0; i<5; i++){
+    sum = sum + myArray[i];
+    product = product * myArray[i];
+if (myArray[i] < smallest){
+    smallest = myArray[i];
+}
+if (myArray[i] > biggest){
+    biggest = myArray[i];
+}
+}
+printf ("\n\n");
+printf ("Smallest item is: %d\n", smallest);
+printf ("Biggest item is: %d\n", biggest);
+printf ("Sum of all items is : %d\n", sum);
+printf ("Product of all items is: %d\n", product);
+
+return 0;
+}
