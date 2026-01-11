@@ -169,3 +169,6 @@ person.name= 'GANZA';
 console.log (person);
 //By use of Bracket notation([])
 person['name']= 'Fides' ;
+// Printing length
+
+console.log(personllenght);
