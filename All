@@ -149,3 +149,12 @@ console.log (name);
 console.log (selectedColour);
 console.log (firstName);
 console.log (selectedColor);//By printing the different outputs with differnt data type
+
+//Printing the properties of the objects
+
+let person = {
+    age: 16,
+    name: 'Gloria',
+    friend:'heyo'
+}
+console.log (person);
