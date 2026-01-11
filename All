@@ -158,3 +158,12 @@ let person = {
     friend:'heyo'
 }
 console.log (person);
+//Accessing the property by using the Dot[.] notation
+
+let person = {
+    age: 16,
+    name: 'Gloria',
+    friend:'heyo'
+}
+person.name= 'GANZA';
+console.log (person);
