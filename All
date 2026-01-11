@@ -134,3 +134,18 @@ printf ("Product of all items is: %d\n", product);
 
 return 0;
 }
+//Here was my starting in JavaScript 
+let interestName= 0.8;
+let age=16;
+let name='Gloria';
+interestName = 9;
+let isAprrved=true;
+let firstName=undefined;
+let selectedColor= 'red';
+let selectedColour= null;
+console.log (interestName);
+console.log (age);
+console.log (name);
+console.log (selectedColour);
+console.log (firstName);
+console.log (selectedColor);//By printing the different outputs with differnt data type
