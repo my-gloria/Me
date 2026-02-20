@@ -297,7 +297,7 @@ int main() {
     return 0;
 }
 
-//
+//Implement array input/output in main function
 
 #include <stdio.h>
 
@@ -324,3 +324,22 @@ int main() {
 
     return 0;
 }
+
+//
+
+#include <stdio.h>
+int main(){
+int i;
+int myArray[5];
+printf("Enter numbers of Array: ");
+for (i=0; i<5; i++){
+scanf("%d",&myArray[5]);
+}
+printf("%d", &myArray);
+printf("\n");
+printf("\n");
+printf("%p", myArray);
+return 0;
+}
+
+//
