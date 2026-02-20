@@ -172,7 +172,8 @@ person['name']= 'Fides' ;
 // Printing length
 
 console.log(personllenght);
-//
+
+//Implement 2D array input and output in C
 #include <stdio.h>
 
 int main() {
@@ -196,5 +197,34 @@ int main() {
         printf("\n");
     }
 
+    return 0;
+}
+
+
+//
+
+
+#include <stdio.h>
+
+int main() {
+    int num1, num2, op;
+    float result;
+
+    printf("Enter two numbers: ");
+    scanf("%d %d", &num1, &num2);
+
+    printf("Choose operation: 1=+  2=-  3=*  4=/ : ");
+    scanf("%d", &op);
+
+    if(op == 1) result = num1 + num2;
+    else if(op == 2) result = num1 - num2;
+    else if(op == 3) result = num1 * num2;
+    else if(op == 4) {
+        if(num2 == 0) { printf("Cannot divide by 0\n"); return 0; }
+        result = (float)num1 / num2;
+    }
+    else { printf("Invalid choice\n"); return 0; }
+
+    printf("Result = %.2f\n", result);
     return 0;
 }
