@@ -281,7 +281,7 @@ int main() {
     return 0;
 }
 
-//
+// Add array length function and main demonstration
 
 #include <stdio.h>
 
@@ -294,5 +294,33 @@ int main() {
     int size = sizeof(arr)/sizeof(arr[0]);
 
     printf("Length of array = %d\n", arrayLength(arr, size));
+    return 0;
+}
+
+//
+
+#include <stdio.h>
+
+int main() {
+    int arr[2][3];
+    int i, j;
+
+    printf("Enter elements:\n");
+
+    for(i = 0; i < 2; i++) {
+        for(j = 0; j < 3; j++) {
+            scanf("%d", &arr[i][j]);
+        }
+    }
+
+    printf("Matrix is:\n");
+
+    for(i = 0; i < 2; i++) {
+        for(j = 0; j < 3; j++) {
+            printf("%d ", arr[i][j]);
+        }
+        printf("\n");
+    }
+
     return 0;
 }
