@@ -325,7 +325,7 @@ int main() {
     return 0;
 }
 
-//
+//Update All
 
 #include <stdio.h>
 int main(){
@@ -342,4 +342,15 @@ printf("%p", myArray);
 return 0;
 }
 
-//
+//Update main function to include user input
+
+#include <stdio.h>
+int main(){
+int i;
+printf("Enter number :");
+scanf("%d", &i);
+int A[6];
+scanf ("%d", &A[0]);
+int sum = A[0]+ A[1] + A[2] + A[3] + A[4] + A[5];
+    return 0;
+}
