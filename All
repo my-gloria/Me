@@ -265,8 +265,23 @@ int main() {
     return 0;
 }
 
-//
+//Implement Fibonacci function and array length function
 
+#include <stdio.h>
+
+int arrayLength(int arr[], int size) {
+    return size; // must pass size as argument
+}
+
+int main() {
+    int arr[] = {10, 20, 30, 40, 50};
+    int size = sizeof(arr)/sizeof(arr[0]);
+
+    printf("Length of array = %d\n", arrayLength(arr, size));
+    return 0;
+}
+
+//
 
 #include <stdio.h>
 
